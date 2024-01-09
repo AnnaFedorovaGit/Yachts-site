@@ -1,13 +1,72 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="header-logo" href="">
+        <!-- logo -->
+        <span class="logo-svg-wrapper">
+          <img class="header-img floating" src="./img/logo.svg" alt="logo" />
+          <span class="logo-wave"></span></span
+        >Yacht Adventures
+      </a>
+      <!-- End logo -->
+      <ul class="header-nav-list list">
+        <li class="header-li">
+          <a class="header-menu-link" href="#about">
+            <span class="button-bottom-line"></span>
+            About</a
+          >
+        </li>
+        <li class="header-li">
+          <a class="header-menu-link" href="#yachts">
+            <span class="button-bottom-line"></span>
+            Yachts</a
+          >
+        </li>
+        <li class="header-li">
+          <a class="header-menu-link" href="#reviews">
+            <span class="button-bottom-line"></span>
+            Reviews</a
+          >
+        </li>
+      </ul>
+      <button
+        class="menu-toggle mobile-menu-toggle-icon js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile-menu-icon" height="24" width="24">
+          <use href="./img/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </nav>
+    <div class="separator"></div>
+  </div>
 </header>
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="header-logo" href="">
+        <img width="23" height="23" alt="logo" src="./img/logo.svg" />Yacht
+        Adventures
+      </a>
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-close-icon"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          width="24"
+          height="24"
+        >
+          <use href="./img/icons.svg#icon-close-mark"></use>
+        </svg>
+      </button>
+    </nav>
+    <div class="separator"></div>
+  </div>
+
+  <ul class="mobile-menu">
+    <li><a href="#about" class="link js-menu-link">About</a></li>
+    <li><a href="#yachts" class="link js-menu-link">Yachts</a></li>
+    <li><a href="#reviews" class="link js-menu-link">Reviews</a></li>
+  </ul>
+</div>
